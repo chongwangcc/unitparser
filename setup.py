@@ -11,10 +11,10 @@ from setuptools import setup
 
 setup(
     name='weightunit',
-    version='0.0.1',
+    version='0.0.2',
     author='chongwangcc',
     author_email='chongwangcc@gmail.com',
-    url="https://github.com/chongwangcc/unitparser",
+    url="https://github.com/chongwangcc/weightunit",
     description=u'提取淘宝title中的单位字符串，并且进行重量计算',
     packages=['weightunit'],
     install_requires=[],

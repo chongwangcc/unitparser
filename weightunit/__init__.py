@@ -114,7 +114,7 @@ class UnitLevel:
         return UnitLevel(level1, level2, level3, dict_special_unit)
 
 
-DEFAULT_LEVEL  = UnitLevel.gen_default()
+DEFAULT_LEVEL = UnitLevel.gen_default()
 
 
 class Operator:
@@ -504,7 +504,6 @@ class MultiUnit:
         if w == float(su.number):
             return True
         else:
-            # TODO 要支持更多种1情况
             if self.have_operator('+'):
                 return False
             else:
@@ -901,7 +900,6 @@ class MultiUnit:
             elif len(xx_single) == 2:
                 if (xx_single[0].level == 1 and xx_single[1].level == 2) or (
                         xx_single[0].level == 2 and xx_single[1].level == 3):
-                    # TODO
                     final_str = final_str[:i0] + f_str + final_str[i1:]
         # final_str = final_str.replace("/", '或')
         return final_str
