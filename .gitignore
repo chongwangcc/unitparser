@@ -1,3 +1,5 @@
 .idea/
 .data_labeled
 /data_labeled/
+/weightunit.egg-info/
+/dist/

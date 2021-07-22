@@ -447,6 +447,7 @@ class MultiUnit:
     def replace_same_unit(self, su, empty_same=False):
         """
         替换相同单位的值
+        :param empty_same:
         :param su:
         :return:
         """
@@ -1190,7 +1191,6 @@ def default_mu_filter(multi_unit, input_str, multi_list):
         if len(multi_list) == 2 and str(multi_list[0])[-1]=='桶' and str(multi_list[1])[-1]=='斤':
             if str(multi_unit)[-1] == '桶':
                 return False
-
 
     return True
 
